@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_221" class="java.beans.XMLDecoder">
+ <object class="modelo.Controlador" id="Controlador0">
+  <void id="ListaCategorias0" property="listaCategorias">
+   <void property="categorias">
+    <void method="put">
+     <string>Limpieza</string>
+     <object class="modelo.Categoria" id="Categoria0">
+      <void property="descripcion">
+       <string>limpieza</string>
+      </void>
+      <void property="nombre">
+       <string>Limpieza</string>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <string>Comida</string>
+     <object class="modelo.Categoria" id="Categoria1">
+      <void property="descripcion">
+       <string>comida</string>
+      </void>
+      <void property="nombre">
+       <string>Comida</string>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <string>Otros</string>
+     <object class="modelo.Categoria" id="Categoria2">
+      <void property="descripcion">
+       <string>Cosas random</string>
+      </void>
+      <void property="nombre">
+       <string>Otros</string>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void id="ListaPedidos0" property="listaPedidos">
+   <void property="pedidos">
+    <void method="put">
+     <int>1</int>
+     <object class="modelo.Pedido">
+      <void property="carrito">
+       <object class="modelo.Carrito" id="Carrito0">
+        <void property="cliente">
+         <object class="modelo.UsuarioCliente" id="UsuarioCliente0">
+          <void property="direccion">
+           <string>calle 123</string>
+          </void>
+          <void property="hashPassword">
+           <int>49</int>
+          </void>
+          <void property="localidad">
+           <string>pirulo</string>
+          </void>
+          <void property="nombre">
+           <string>Roberto Galan</string>
+          </void>
+          <void property="telefono">
+           <string>12346589</string>
+          </void>
+          <void property="tipoUser">
+           <string>cliente</string>
+          </void>
+          <void property="user">
+           <string>1</string>
+          </void>
+         </object>
+        </void>
+        <void property="ldp">
+         <void method="add">
+          <object class="modelo.LineaDePedido">
+           <void property="cantidad">
+            <int>10</int>
+           </void>
+           <void property="prod">
+            <object class="modelo.Producto" id="Producto0">
+             <void property="categoria">
+              <object idref="Categoria0"/>
+             </void>
+             <void property="codigo">
+              <int>1</int>
+             </void>
+             <void property="descripcion">
+              <string>escoba que se hace chikita</string>
+             </void>
+             <void property="nombre">
+              <string>Escoba retractil</string>
+             </void>
+             <void property="precio">
+              <double>3.07</double>
+             </void>
+             <void property="stock">
+              <int>988</int>
+             </void>
+            </object>
+           </void>
+          </object>
+         </void>
+        </void>
+       </object>
+      </void>
+      <void property="estado">
+       <object class="java.lang.Enum" method="valueOf">
+        <class>modelo.PedidoEstado</class>
+        <string>ENVIADO</string>
+       </object>
+      </void>
+      <void property="idPedido">
+       <int>1</int>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <int>2</int>
+     <object class="modelo.Pedido">
+      <void property="carrito">
+       <object class="modelo.Carrito" id="Carrito1">
+        <void property="cliente">
+         <object class="modelo.UsuarioCliente" id="UsuarioCliente1">
+          <void property="direccion">
+           <string>coso 434</string>
+          </void>
+          <void property="hashPassword">
+           <int>50</int>
+          </void>
+          <void property="localidad">
+           <string>parque gordasico</string>
+          </void>
+          <void property="nombre">
+           <string>gordo porcel</string>
+          </void>
+          <void property="telefono">
+           <string>60549</string>
+          </void>
+          <void property="tipoUser">
+           <string>cliente</string>
+          </void>
+          <void property="user">
+           <string>2</string>
+          </void>
+         </object>
+        </void>
+        <void property="ldp">
+         <void method="add">
+          <object class="modelo.LineaDePedido">
+           <void property="cantidad">
+            <int>10</int>
+           </void>
+           <void property="prod">
+            <object class="modelo.Producto" id="Producto1">
+             <void property="categoria">
+              <object idref="Categoria1"/>
+             </void>
+             <void property="codigo">
+              <int>3</int>
+             </void>
+             <void property="descripcion">
+              <string>Para sanguchitos</string>
+             </void>
+             <void property="nombre">
+              <string>Jamon</string>
+             </void>
+             <void property="precio">
+              <double>0.37</double>
+             </void>
+             <void property="stock">
+              <int>9700</int>
+             </void>
+            </object>
+           </void>
+          </object>
+         </void>
+        </void>
+       </object>
+      </void>
+      <void property="estado">
+       <object class="java.lang.Enum" method="valueOf">
+        <class>modelo.PedidoEstado</class>
+        <string>PAGADO</string>
+       </object>
+      </void>
+      <void property="idPedido">
+       <int>2</int>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void id="ListaProductos0" property="listaProductos">
+   <void property="productos">
+    <void method="put">
+     <int>1</int>
+     <object idref="Producto0"/>
+    </void>
+    <void method="put">
+     <int>2</int>
+     <object class="modelo.Producto">
+      <void property="categoria">
+       <object idref="Categoria0"/>
+      </void>
+      <void property="codigo">
+       <int>2</int>
+      </void>
+      <void property="descripcion">
+       <string>Para trapears</string>
+      </void>
+      <void property="nombre">
+       <string>Trapo de piso</string>
+      </void>
+      <void property="precio">
+       <double>1.23</double>
+      </void>
+      <void property="stock">
+       <int>9897</int>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <int>3</int>
+     <object idref="Producto1"/>
+    </void>
+    <void method="put">
+     <int>4</int>
+     <object class="modelo.Producto">
+      <void property="categoria">
+       <object idref="Categoria1"/>
+      </void>
+      <void property="codigo">
+       <int>4</int>
+      </void>
+      <void property="descripcion">
+       <string>estan agrios</string>
+      </void>
+      <void property="nombre">
+       <string>Pomelos</string>
+      </void>
+      <void property="precio">
+       <double>0.19</double>
+      </void>
+      <void property="stock">
+       <int>850</int>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <int>5</int>
+     <object class="modelo.Producto">
+      <void property="categoria">
+       <object idref="Categoria2"/>
+      </void>
+      <void property="codigo">
+       <int>5</int>
+      </void>
+      <void property="descripcion">
+       <string>para cantar</string>
+      </void>
+      <void property="nombre">
+       <string>microfono para karaoke</string>
+      </void>
+      <void property="precio">
+       <double>25.0</double>
+      </void>
+      <void property="stock">
+       <int>999</int>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <int>6</int>
+     <object class="modelo.Producto">
+      <void property="categoria">
+       <object idref="Categoria2"/>
+      </void>
+      <void property="codigo">
+       <int>6</int>
+      </void>
+      <void property="descripcion">
+       <string>para decorar cosas</string>
+      </void>
+      <void property="nombre">
+       <string>Helado de plastico</string>
+      </void>
+      <void property="precio">
+       <double>0.15</double>
+      </void>
+      <void property="stock">
+       <int>9900</int>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <int>7</int>
+     <object class="modelo.Producto">
+      <void property="categoria">
+       <object idref="Categoria2"/>
+      </void>
+      <void property="codigo">
+       <int>7</int>
+      </void>
+      <void property="descripcion">
+       <string>Para ser el alma de la pary</string>
+      </void>
+      <void property="nombre">
+       <string>Maraca de plastico</string>
+      </void>
+      <void property="precio">
+       <double>0.15</double>
+      </void>
+      <void property="stock">
+       <int>1000</int>
+      </void>
+     </object>
+    </void>
+    <void method="put">
+     <int>10</int>
+     <object class="modelo.Producto">
+      <void property="categoria">
+       <object idref="Categoria1"/>
+      </void>
+      <void property="codigo">
+       <int>10</int>
+      </void>
+      <void property="descripcion">
+       <string>A big lump with knobs</string>
+      </void>
+      <void property="nombre">
+       <string>Corn</string>
+      </void>
+      <void property="precio">
+       <double>1.0</double>
+      </void>
+      <void property="stock">
+       <int>9998</int>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void id="ListaUsuarios0" property="listaUsuarios">
+   <void property="usuarios">
+    <void method="put">
+     <string>1</string>
+     <object idref="UsuarioCliente0"/>
+    </void>
+    <void method="put">
+     <string>2</string>
+     <object idref="UsuarioCliente1"/>
+    </void>
+    <void method="put">
+     <string>3</string>
+     <object class="modelo.UsuarioGestor">
+      <void property="hashPassword">
+       <int>51</int>
+      </void>
+      <void property="nombre">
+       <string>gestor 1</string>
+      </void>
+      <void property="telefono">
+       <string>6846</string>
+      </void>
+      <void property="tipoUser">
+       <string>gestor</string>
+      </void>
+      <void property="user">
+       <string>3</string>
+      </void>
+     </object>
+    </void>
+   </void>
+  </void>
+  <void property="moneda">
+   <object class="modelo.Moneda">
+    <void property="nombre">
+     <string>Peso</string>
+    </void>
+    <void property="valor">
+     <double>160.0</double>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
